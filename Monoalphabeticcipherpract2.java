@@ -61,3 +61,11 @@ return(new String(p1));
     }
     
 }
+
+Output:
+run:
+Enter a Message: 
+Vikas
+Encrypted Message: COAQL
+Decrypted Message: vikas
+BUILD SUCCESSFUL (total time: 5 seconds)
