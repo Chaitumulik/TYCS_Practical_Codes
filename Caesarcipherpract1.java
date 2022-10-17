@@ -48,3 +48,14 @@ public class Caesarcipherpract1 {
     }
     
 }
+
+Output:
+
+run:
+Enter a message:
+Hello
+Enter Key:
+2
+Encrypted Message: Jgnnq
+BUILD SUCCESSFUL (total time: 6 seconds)
+
