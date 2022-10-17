@@ -1,0 +1,41 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package messagedigest5;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+/**
+ *
+ * @author Administrator
+ */
+public class MessageDigest5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("For null"+ md5(""));
+        System.out.println("For simple Text"+md5("This is my text"));
+        System.out.println("For simple numbers:"+md5("12345"));
+    }
+    public static String md5(String input)
+    {
+        String md5=null;
+        if(null==input)
+            return null;
+            try{
+                MessageDigest digest=MessageDigest.getInstance("MD5");
+                digest.update(input.getBytes(),0,input.length());
+                md5=new BigInteger(1,digest.digest()).toString(16);
+        }
+            catch(NoSuchAlgorithmException e)
+            {
+                e.printStackTrace();
+            }
+            return md5;
+    }
+}
