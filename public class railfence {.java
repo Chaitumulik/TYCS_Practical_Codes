@@ -18,3 +18,10 @@ public class railfence {
         System.out.println("Ciphered Text: "+output);
         }
     }
+
+Output:
+run:
+Input String : Vikas College
+Cipher Text : VksCleeia olg
+BUILD SUCCESSFUL (total time: 0 seconds)
+
